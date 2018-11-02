@@ -12,6 +12,7 @@ x64/
 x86/
 bld/
 bin/
+!libs/SFML-2.5.1/bin/
 [Oo]bj/
 [Ll]og/
 
