@@ -140,7 +140,12 @@ XCOPY "$(SolutionDir)libs\SFML-2.5.1\bin\sfml-window-2.dll"  "$(TargetDir)" /E /
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="game.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="paddles.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="paddles.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
