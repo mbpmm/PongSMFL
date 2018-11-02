@@ -12,6 +12,9 @@ public:
 	~Paddle();
 	void MovePaddle();
 	void CollisionPaddle();
+	int getX();
+	int getY();
+	RectangleShape getRec();
 
 private:
 	int _x;
