@@ -16,14 +16,14 @@ Paddle::~Paddle()
 }
 void Paddle::MovePaddle()
 {
-	if (Keyboard::isKeyPressed(Keyboard::Up))
+	if (Keyboard::isKeyPressed(Keyboard::Left))
 	{
-		_y-=3;
+		_x-=8;
 		_rec.setPosition(_x, _y);
 	}
-	if (Keyboard::isKeyPressed(Keyboard::Down))
+	if (Keyboard::isKeyPressed(Keyboard::Right))
 	{
-		_y += 3;
+		_x += 8;
 		_rec.setPosition(_x, _y);
 	}
 }
@@ -34,4 +34,12 @@ void Paddle::CollisionPaddle()
 RectangleShape Paddle::getRec()
 {
 	return _rec;
+}
+int Paddle::getX()
+{
+	return _x;
+}
+int Paddle::getY()
+{
+	return _y;
 }
