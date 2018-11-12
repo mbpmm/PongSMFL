@@ -31,7 +31,7 @@ int main()
 				window.close();
 			
 			if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Space) {
-				pj->_vel.y = -40;
+				pj->_vel.y = -4.f;
 			}
 		}
 
