@@ -12,13 +12,17 @@ public:
 	~Paddle();
 	void MovePaddle();
 	void CollisionPaddle();
+	void UpdatePaddle();
 	int getX();
 	int getY();
 	RectangleShape getRec();
+	Vector2f _vel;
 
 private:
-	int _x;
-	int _y;
+	float _x;
+	float _y;	
+	Vector2f _acc;
+	float _gravity;
 	RectangleShape _rec;
 };
 

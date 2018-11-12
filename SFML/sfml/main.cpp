@@ -29,12 +29,17 @@ int main()
 			// Close window : exit
 			if (event.type == sf::Event::Closed)
 				window.close();
-			pj->MovePaddle();
-			if (pj->getX()>=400)
-			{
-				view2.setCenter(pj->getX(), pj->getY()-95);
-			}
 			
+			if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Space) {
+				pj->_vel.y = -40;
+			}
+		}
+
+		pj->UpdatePaddle();
+		pj->MovePaddle();
+		if (pj->getX() >= 300)
+		{
+			view2.setCenter(pj->getX() + 100, 300);
 		}
 		// Clear screen
 		window.clear();
