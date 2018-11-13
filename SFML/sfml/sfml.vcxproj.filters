@@ -1,36 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Archivos de origen">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="Juego">
+      <UniqueIdentifier>{14a13526-9749-4834-a209-94d88c9a3021}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Archivos de encabezado">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    <Filter Include="Pantallas">
+      <UniqueIdentifier>{4baaf0e4-5c01-4a66-b383-4533c62faa75}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Archivos de recursos">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="Objetos">
+      <UniqueIdentifier>{cc352e21-1fb9-4f3a-9d00-7d6c3eea9894}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Archivos de origen</Filter>
+    <ClCompile Include="..\src\Objetos\paddles.cpp">
+      <Filter>Objetos</Filter>
     </ClCompile>
-    <ClCompile Include="game.cpp">
-      <Filter>Archivos de origen</Filter>
+    <ClCompile Include="..\src\Pantallas\game.cpp">
+      <Filter>Pantallas</Filter>
     </ClCompile>
-    <ClCompile Include="paddles.cpp">
-      <Filter>Archivos de origen</Filter>
+    <ClCompile Include="..\src\main.cpp" />
+    <ClCompile Include="..\src\Juego\app.cpp">
+      <Filter>Juego</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="paddles.h">
-      <Filter>Archivos de encabezado</Filter>
+    <ClInclude Include="..\src\Objetos\paddles.h">
+      <Filter>Objetos</Filter>
     </ClInclude>
-    <ClInclude Include="particles.h">
-      <Filter>Archivos de encabezado</Filter>
+    <ClInclude Include="..\src\Objetos\particles.h">
+      <Filter>Objetos</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Juego\app.h">
+      <Filter>Juego</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

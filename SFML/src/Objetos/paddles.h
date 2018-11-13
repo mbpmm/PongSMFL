@@ -10,9 +10,9 @@ public:
 	Paddle();
 	Paddle(int x, int y, RectangleShape rec);
 	~Paddle();
-	void MovePaddle();
+	void MovePaddle(Time elapsed);
 	void CollisionPaddle();
-	void UpdatePaddle();
+	void UpdatePaddle(Time elapsed);
 	int getX();
 	int getY();
 	RectangleShape getRec();
