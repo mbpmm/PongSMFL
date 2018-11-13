@@ -152,6 +152,7 @@ xcopy "$(SolutionDir)res" "$(TargetDir)res"/E /y /s</Command>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="paddles.h" />
+    <ClInclude Include="particles.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

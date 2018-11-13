@@ -9,7 +9,7 @@ Paddle::Paddle(int x, int y, RectangleShape rec)
 	_x = x;
 	_y = y;
 	_rec = rec;
-	_gravity = 0.04f;
+	_gravity = 0.05f;
 	_vel = {0,0};
 	_acc= { 0,0 };
 
@@ -35,8 +35,8 @@ void Paddle::UpdatePaddle()
 {
 	if (_y < 395)                  
 		_vel.y += _gravity;    
-	else if (_y > 395)             
-		_y = 395;                 
+	else if (_y > 391)             
+		_y = 391;                 
 
 	_vel.y += _acc.x;
 	_vel.y += _acc.y;
